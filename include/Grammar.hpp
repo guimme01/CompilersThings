@@ -16,5 +16,5 @@ class Grammar{
         std::list<std::string> getNonTerminals() const;
         std::list<Production> getProductions() const;
         void printGrammar() const;
-        void setProductions(std::list<Production>);
+        void setProductions(const std::list<Production>&);
 };
