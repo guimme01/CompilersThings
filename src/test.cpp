@@ -56,8 +56,8 @@ std::list<Production> removeLeftRecursion(Grammar& g){
     }
     bool add = true;
     std::list<Production> tmpList = newProduction;
-    for(auto& p : noLeftRecProductions){
-        for(auto& p2 : tmpList){
+    for(const auto& p : noLeftRecProductions){
+        for(const auto& p2 : tmpList){
             if(p.getHead() == p2.getHead())
                 add = false;
         }
