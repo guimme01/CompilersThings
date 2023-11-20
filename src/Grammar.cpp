@@ -20,8 +20,8 @@ std::list<std::string> Grammar::getNonTerminals() const{
 std::list<Production> Grammar::getProductions() const{
     return productions;
 }
-void Grammar::setProductions(std::list<Production> const & productions){
-    this->productions = productions;
+void Grammar::setProductions(std::list<Production> const & newproductions){
+    this->productions = newproductions;
 }
 void Grammar::printGrammar() const {
     std::cout << "Simbolo iniziale: " << this->startSymbol << "\n";
