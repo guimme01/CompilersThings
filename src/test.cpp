@@ -33,7 +33,7 @@ std::list<Production> removeLeftRecursion(Grammar& g){
     std::string tmp;
     std::string alpha;
     std::string beta;
-    for (auto& p : g.getProductions()){
+    for (const auto& p : g.getProductions()){
         tmp = getFirstRightSymbol(p);
         if(tmp == p.getHead()){
             for(auto& tmpP : g.getProductions()){
