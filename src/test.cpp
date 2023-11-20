@@ -15,7 +15,7 @@ std::string getFirstRightSymbol(Production p){
     return s;
 }
 
-bool isRecursive(Grammar g){
+bool isRecursive(Grammar& g){
     std::list<Production> prods = g.getProductions();
     std::string x;
     for(const auto& p : prods){
