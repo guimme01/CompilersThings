@@ -31,7 +31,8 @@ std::list<Production> removeLeftRecursion(Grammar& g){
     std::list<Production> noLeftRecProductions;
     Production produzioneTemp("", "");
     std::string tmp;
-    std::string alpha, beta;
+    std::string alpha;
+    std::string beta;
     for (auto& p : g.getProductions()){
         tmp = getFirstRightSymbol(p);
         if(tmp == p.getHead()){
