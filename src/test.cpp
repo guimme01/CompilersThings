@@ -4,7 +4,7 @@
 #include <string>
 #include <list>
 
-std::string getFirstRightSymbol(Production p){
+std::string getFirstRightSymbol(const Production& p){
     std::string s = "";
     for(int i = 0; p.getBody()[i] != '\0'; i++){
         if(p.getBody()[i] == ' '){
